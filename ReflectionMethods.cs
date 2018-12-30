@@ -14,10 +14,8 @@ namespace TerrariaDimensions
 
         }
 
+        public static WorldGenerator GetCurrentWorldGenerator() => (WorldGenerator)worldGeneratorFieldInfo.GetValue(null);
+
         public static int GetSeed(this WorldGenerator worldGenerator) => (int)seedFieldInfo.GetValue(worldGenerator);
-
-        public static WorldGenerator GetWorldGenerator() => (WorldGenerator)worldGeneratorFieldInfo.GetValue(null);
-
-
     }
 }

@@ -8,7 +8,7 @@ namespace TerrariaDimensions
         {
             Instance = this;
 
-            this.DimensionsManager = new DimensionsManager(new DimensionsRegistry());
+            this.DimensionsRegistry = new DimensionsRegistry();
         }
 
         public override void Unload()
@@ -16,7 +16,7 @@ namespace TerrariaDimensions
             Instance = null;
         }
 
-        public DimensionsManager DimensionsManager { get; private set; }
+        public DimensionsRegistry DimensionsRegistry { get; private set; }
 
         public static TerrariaDimensions Instance { get; private set; }
     }

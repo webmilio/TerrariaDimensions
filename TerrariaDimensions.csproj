@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dimension.cs" />
-    <Compile Include="DimensionsManager.cs" />
     <Compile Include="DimensionsRegistry.cs" />
     <Compile Include="ICanBeRegistered.cs" />
     <Compile Include="ReflectionMethods.cs" />

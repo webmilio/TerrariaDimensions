@@ -9,7 +9,7 @@ namespace TerrariaDimensions
 
         public override void PostWorldGen()
         {
-            TerrariaDimensions.Instance.DimensionsManager.RegisterDimension(new Dimension("Origin", this, ReflectionMethods.GetWorldGenerator(), false));
+            TerrariaDimensions.Instance.DimensionsRegistry.Register(new Dimension("Origin", this, ReflectionMethods.GetCurrentWorldGenerator(), false));
         }
 
         public override void PostUpdate()
